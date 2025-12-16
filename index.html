@@ -16,7 +16,206 @@
       })(window,document,'script','dataLayer','GTM-PKN539T');</script>
       <!-- End Google Tag Manager -->
   </head>
+
+<style>
+/* ====== MODAL BASE ====== */
+.modal-content.modal {
+  border-radius: 24px;
+  padding: 40px 40px 80px;
+  border: none;
+}
+
+
+/* Botón X */
+.modal-close.btn-close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background-color: #e31c23;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  opacity: 1;
+  filter: none;
+  color: #fff;
+  z-index: 9999;
+}
+.iconcerrar{
+  width: 20px;
+}
+
+
+
+/* Quita ícono default */
+.modal-close.btn-close::before {
+  display: none;
+}
+
+/* Título */
+.modal-title {
+  width: 100%;
+  text-align: left;
+}
+
+.plan-name {
+  font-size: 32px;
+  font-weight: 800;
+  color: #e31c23;
+ padding-left: 10px;
+}
+
+/* ====== BODY ====== */
+.modal-body {
+  padding: 0;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+
+
+
+
+
+/* ====== TARJETAS ====== */
+.channels-group {
+  border: 1px solid #e31c23;
+  border-radius: 20px;
+  padding: 24px;
+  background: #fff5f5;
+  position: relative;
+}
+
+/* Badgejita roja */
+.channels-group h3 {
+  position: absolute;
+  top: -22px;
+  left: 24px;
+  background: #e31c23;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  box-shadow: 0 8px 20px rgba(227,28,35,.35);
+  
+}
+
+
+/* Texto canales */
+.channels-group p {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+/* ====== LOGOS ====== */
+.channels-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 16px;
+}
+
+.channels-list li {
+  list-style: none;
+  background: #eee;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.channels-list img {
+  max-width: 45px;
+  max-height: 45px;
+}
+
+/* ====== FOOTER BOTÓN ====== */
+.modal-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: white;
+  border-radius: 0 0 24px 24px;
+}
+
+.btn-contratar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e31c23;
+  border-radius: 40px;
+  padding: 16px 48px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 10px 30px rgba(227,28,35,.4);
+  z-index: 99999;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 991px) {
+  .modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content.modal {
+    padding: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
   <body>
+
+
+
+  
+
     
      <!-- Google Tag Manager (noscript) -->
      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKN539T"
@@ -175,448 +374,7 @@
         </div>
       </header>
       
-    <div id="contain" class="contain">
 
-
-      <div class="container-banner col-12 d-flex">
-        <div class="text-banner col-12 mt-4">
-          <div class="text1 text-uppercase d-flex flex-column text-center col-5">
-            <span class="white-txt">PONLE</span>
-            <span class="blue-txt">MÁS ADRENALINA</span>
-            <span class="white-txt mb-3 mb-md-2">A TU ENTRETENIMIENTO</span>
-          </div>
-          <div class="col-12 col-md-8 d-flex flex-column contrata">
-            <span class="blue-subtxt">SÓLO CONTRATA</span>
-            <img id="img-mobile" src="assets/images/img/imgBannner-mobile.png" alt="ESP-NBA-NETWORK"> <br>
-            <img id="img2" src="assets/images/img/titlebmd.png" alt="básico más deportes">
-            <p class="txt-mobile text-center mb-0">HASTA 111 CANALES</p>
-            <p class="txt-mobile text-center mb-0"> <span> 25 canales llenos de pasión deportiva,</span> además de todo lo que te gusta</p>
-            <div class="price d-flex">
-              <div class="text2">
-                <span class="text-white font-s1">POR SOLO</span><br>
-                <span class="font-s text-white">$</span>
-                <span class="font-s2 me-2">442</span>
-              
-              </div>
-              <div class="text3 d-flex flex-column">
-                <span class="font-s1 mt-3 mt-md-4">/MES</span>
-              
-               
-              </div>
-              <div class="ban-img ">
-                <p>HASTA 111 CANALES</p>
-                <p class="text-white text-left"> <span>25 canales llenos de pasión deportiva,</span> <br> además de todo lo que te gusta.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-      </div>
-  
-
-        <div class="container-contact">
-          <div class="title d-flex justify-content-center">
-            <h5 class="m-1 text-white">¡PÍDELO AHORA!</h5> 
-          </div>
-          <div class="box-contact col-12 d-flex pt-2 pb-3">
-            <div class="with-dish col-8 text-center mt-4">
-              <h5>SI YA TIENES DISH</h5> 
-              <button class="btn btn-red"><a href="tel:+5215556101010"><b>Llama al 55 56 10 10 10</b></button></a>
-             
-              <button class="btn btn-appDish px-3 mx-2"><a href="https://play.google.com/store/apps/details?id=grupoappmex.com.dish&amp;hl=es_MX&amp;gl=US" target="_blank"><img class="logo-contact" src="assets/images/logo/app-dish.svg" alt="app Dish">En la app dish</a></button>
-              <button class="btn btn-whats px-3 mx-2" style="padding-top: 1px;
-              padding-bottom: 1px;"> <a href="https://wa.me/5215556101010" style="text-decoration: none;" target="_blank"> <img class="logo-contact" src="assets/images/logo/whatsapp.svg" alt="Whatsapp"> Por whatsapp</a></button>
-              <hr>
-            </div>
-            <div class="col-4 text-center mt-4 noDish">
-              <h5>SI NO TIENES DISH</h5>
-              <button class="btn btn-red"><a href="https://www.dish.com.mx/registro/paquete/BM" target="_blank"><b>SUSCRÍBETE AQUÍ</b></button></a>
-            
-            </div>
-          </div>
-        </div>
-
-
-       <!--  <div class="container-contact">
-          <div class="box-contact pb-4">
-            <div class="with-dish text-center mt-4 px-3 d-flex justify-content-center align-items-center flex-wrap flex-column flex-sm-row gap-4">
-              <h5 class="m-0">¡PÍDELO AHORA!</h5> 
-              <button class="btn btn-red"><a href="tel:+5215556101010"><b>Llama al 55 56 10 10 10</b></button></a>
-                <a href="https://play.google.com/store/apps/details?id=grupoappmex.com.dish&hl=es_MX&gl=US" class="btn-appDish" target="_blank">
-                  <img class="logo-contact" src="assets/images/logo/app-dish.svg" alt="app Dish">
-                  EN LA APP DISH
-              </a>
-               <a href="https://wa.me/5215556101010" class="btn-whats" target="_blank">
-                <img class="logo-contact" src="assets/images/logo/whatsapp.svg" alt="Whatsapp"> 
-                Por Whatsapp
-              </a>
-            </div>
-          </div>
-          <div class="box-footer"></div>
-        </div> -->
-        
-      <div class="container-channels d-flex flex-column align-items-center pb-5">
-          <ul class="pack-new-channels">
-            <li>
-              <img src="assets/images/channels/espn.svg" alt="ESPN">
-            </li>
-            <li>
-              <img src="assets/images/channels/nfl.png" alt="Network">
-            </li>
-            <li>
-              <img src="assets/images/channels/nba.svg" alt="NBA">
-            </li>
-            <li>
-              <img src="assets/images/channels/espn2.svg" alt="ESPN2">
-            </li>
-            <li>
-              <img src="assets/images/channels/claro.svg" alt="Claro Sports">
-            </li>
-            <li>
-              <img src="assets/images/channels/golf.svg" alt="GOLF">
-            </li>
-            <li>
-              <img src="assets/images/channels/espn3.svg" alt="ESPN3">
-            </li>
-            <li>
-              <img src="assets/images/channels/turbo.png" alt="Discovery Turbo">
-            </li>
-            <li>
-              <img src="assets/images/channels/espnextra.svg" alt="ESP Extra">
-            </li>
-            <li>
-              <img src="assets/images/channels/outdoors.svg" alt="Outdoor">
-            </li>
-            <li> 
-              <img src="assets/images/channels/tnt.svg" alt="TNT">
-            </li>
-            <li>
-              <img src="assets/images/channels/tvc.png" alt="TVC">
-            </li>
-            <li>
-              <img src="assets/images/channels/hisports.svg" alt="Hi Sports">
-            </li>
-            <li>
-              <img src="assets/images/channels/tyc.png"t alt="TyC">
-            </li>
-            <li>
-              <img src="assets/images/channels/fightbox.svg" alt="FIGHTBOX">
-            </li>
-            <li>
-              <img src="assets/images/channels/fastbox.svg" alt="Fast&Fun">
-            </li>
-            <li>
-              <img src="assets/images/channels/px-s-ports.svg" alt="PXs">
-            </li>
-            <li>
-              <img src="assets/images/channels/trace.svg" alt="Trace">
-            </li>
-            <li>
-              <img src="assets/images/channels/ayms.png" alt="AYMS">
-            </li>
-            <li>
-              <img src="assets/images/channels/gametoon.svg" alt="Game Toon">
-            </li>
-            <li>
-              <img src="assets/images/channels/ginx.svg" alt="Ginx">
-            </li>
-            <li> 
-              <img src="assets/images/channels/mvstv.svg" alt="MVStv">
-            </li>
-            <li> 
-              <img src="assets/images/channels/azteca_deportes.svg" alt="Azteca deportes">
-            </li>
-            <li> 
-              <img src="assets/images/channels/space.svg" alt="SPACE">
-            </li>
-          </ul>
-  
-          <ul class="pack-channels">
-            <li> 
-              <img src="assets/images/channels/star-channel.svg" alt="Star Channel">
-            </li>
-            <li> 
-              <img src="assets/images/channels/universal-tv.svg" alt="UNIVERSAL TV">
-            </li>
-            <li> 
-              <img src="assets/images/channels/sony.png" alt="SONY">
-            </li>
-            <li> 
-              <img src="assets/images/channels/wb.svg" alt="WB">
-            </li>
-            <li> 
-              <img src="assets/images/channels/amc.png" alt="AMC">
-            </li>
-            <li> 
-              <img src="assets/images/channels/tnt-series.svg" alt="TNT Series">
-            </li>
-            <li> 
-              <img src="assets/images/channels/a3.svg" alt="A3Series">
-            </li>
-            <li>
-              <img src="assets/images/channels/cine-latino.svg" alt="Cine_latino">
-            </li>
-            <li>
-              <img src="assets/images/channels/mvstv.svg" alt="mvsTV">
-            </li>
-            <li>
-              <img src="assets/images/channels/space.svg" alt="Space">
-            </li>
-            <li>
-              <img src="assets/images/channels/adultswinm.svg" alt="adultswinm">
-            </li>
-            <li>
-              <img src="assets/images/channels/disney_channel.svg" alt="DisneyChannel">
-            </li>
-            <li> 
-              <img src="assets/images/channels/antena3.svg" alt="Antena3">
-            </li>
-            <li> 
-              <img src="assets/images/channels/ee.svg" alt="eE">
-            </li>
-            <li> 
-              <img src="assets/images/channels/axn.svg" alt="AXN">
-            </li>
-            <li> 
-              <img src="assets/images/channels/fx.svg" alt=" FX">
-            </li>
-            <li> 
-              <img src="assets/images/channels/usa.png" alt="USA">
-            </li>
-            <li> 
-              <img src="assets/images/channels/ae.svg" alt="A&E">
-            </li>
-            <li> 
-              <img src="assets/images/channels/discovery-id.svg" alt="Discovery ID">
-            </li>
-            <li> 
-              <img src="assets/images/channels/home-health.png" alt="home & health">
-            </li>
-            <li> 
-              <img src="assets/images/channels/tlc.svg" alt="TLC">
-            </li>
-            <li> 
-              <img src="assets/images/channels/elgourmet.svg" alt="elgourmet">
-            </li>
-            <li> 
-              <img src="assets/images/channels/lifetime.svg" alt="lifetime">
-            </li>
-            <li> 
-              <img src="assets/images/channels/mas-chic.svg" alt="Mas Chic">
-            </li>
-            <li> 
-              <img src="assets/images/channels/holatv.svg" alt="¡Hola!Tv">
-            </li>
-            <li> 
-              <img src="assets/images/channels/e.svg" alt="E!">
-            </li>
-            <li> 
-              <img src="assets/images/channels/comedy-central.svg" alt="Comedy Central">
-            </li>
-            <li> 
-              <img src="assets/images/channels/mtv.svg" alt="MTV">
-            </li>
-            <li> 
-              <img src="assets/images/channels/mtv-hits.png" alt="MTV Hits">
-            </li>
-            <li> 
-              <img src="assets/images/channels/exatv.svg" alt="exa tv">
-            </li>
-            <li> 
-              <img src="assets/images/channels/la-mejor.svg" alt="La mejor">
-            </li>
-            <li> 
-              <img src="assets/images/channels/vr.png" alt="VR">
-            </li>
-            <li> 
-              <img src="assets/images/channels/mtv-00s.svg" alt="MTV 00s">
-            </li>
-            <li> 
-              <img src="assets/images/channels/htv.svg" alt="h tv">
-            </li>
-            <li> 
-              <img src="assets/images/channels/tele-ritmo.svg" alt="tele ritmo">
-            </li>
-            <li> 
-              <img src="assets/images/channels/disney-junior.png" alt="disney junior">
-            </li>
-            <li> 
-              <img src="assets/images/channels/nickelodeon.svg" alt="nickelodeon">
-            </li>
-            <li> 
-              <img src="assets/images/channels/nickjr.svg" alt="nick jr">
-            </li>
-            <li> 
-              <img src="assets/images/channels/nickmusic.svg" alt="nickmusic">
-            </li>
-            <li> 
-              <img src="assets/images/channels/cn.svg" alt="Cartoon Network">
-            </li>
-            <li> 
-              <img src="assets/images/channels/cartoonito.svg" alt="Cartoonito">
-            </li>
-            <li> 
-              <img src="assets/images/channels/discovery-kids.svg" alt="Discovery kids">
-            </li>
-            <li> 
-              <img src="assets/images/channels/babyfirst.svg" alt="babyfirst">
-            </li>
-            <li> 
-              <img src="assets/images/channels/babytv.svg" alt="Babytv">
-            </li>
-            <li> 
-              <img src="assets/images/channels/arts.svg" alt="ARTS">
-            </li>
-            <li> 
-              <img src="assets/images/channels/discovery.svg" alt="Discovery">
-            </li>
-            <li> 
-              <img src="assets/images/channels/natgeo.svg" alt="National Geographic">
-            </li>
-            <li> 
-              <img src="assets/images/channels/animal-planet.svg" alt="animal planet">
-            </li>
-            <li> 
-              <img src="assets/images/channels/history.svg" alt="history">
-            </li>
-            <li> 
-              <img src="assets/images/channels/history2.svg" alt="History2">
-            </li>
-            <li> 
-              <img src="assets/images/channels/cnn-esp.svg" alt="CNN Español">
-            </li>
-            <li> 
-              <img src="assets/images/channels/cnn.svg" alt="CNN">
-            </li>
-
-            <li> 
-              <img src="assets/images/channels/grupoformula.svg" alt="Grupo formula">
-            </li>
-            <li> 
-              <img src="assets/images/channels/milenio.svg" alt="MILENIO">
-            </li>
-            <li> 
-              <img src="assets/images/channels/mn.png" alt="MN">
-            </li>
-            <li> 
-              <img src="assets/images/channels/justiciatv.svg" alt="Justiciatv">
-            </li>
-            <li> 
-              <img src="assets/images/channels/mc.svg" alt="MC">
-            </li>
-            <li> 
-              <img src="assets/images/channels/cinemax.svg" alt="CINEMAX">
-            </li>
-            <li> 
-              <img src="assets/images/channels/mp.svg" alt="Mp">
-            </li>
-            <li> 
-              <img src="assets/images/channels/cinecanal.svg" alt="CINECANAL">
-            </li>
-            <li> 
-              <img src="assets/images/channels/film-arts.svg" alt="Fil&arts">
-            </li>
-            <li> 
-              <img src="assets/images/channels/studio-universal.svg" alt="Studio Universal">
-            </li>
-            <li> 
-              <img src="assets/images/channels/paramount-network.svg" alt="Paramount">
-            </li>
-            <li> 
-              <img src="assets/images/channels/cinecanal2.svg" alt="CINECANAL">
-            </li>
-            <li> 
-              <img src="assets/images/channels/telemundo.svg" alt="TELEMUNDO">
-            </li>
-            <li> 
-              <img src="assets/images/channels/pasiones.svg" alt="PASIONES">
-            </li>
-            <li> 
-              <img src="assets/images/channels/tnt_novelas.svg" alt="TNT NOVELAS">
-            </li>
-            <li> 
-              <img src="assets/images/channels/dreamworks.svg" alt="DREAMWORKS">
-            </li>
-            <li> 
-              <img src="assets/images/channels/daystart.svg" alt="DAYSTAR">
-            </li>
-            <li> 
-              <img src="assets/images/channels/azteca_int.svg" alt="AZTECA INTERNACIONAL">
-            </li>
-            <li> 
-              <img src="assets/images/channels/corazon.svg" alt="CORAZÓN">
-            </li>
-            <li> 
-              <img src="assets/images/channels/clic.svg" alt="CLIC">
-            </li>
-            <li> 
-              <img src="assets/images/channels/amas.svg" alt="A MÁS">
-            </li>
-            <li> 
-              <img src="assets/images/channels/cinema.svg" alt="CINEMA">
-            </li>
-
-         
-          </ul>
-          <div class="channels-opentv d-flex flex-column align-items-center text-center">
-            <ul class="ul-opentv m-0">
-              <li>
-                <img src="assets/images/channels/uno.svg" alt="uno">
-              </li>
-              <li>
-                <img src="assets/images/channels/dos.svg" alt="dos">
-              </li>
-              <li>
-                <img src="assets/images/channels/cinco.svg" alt="cinco">
-              </li>
-              <li>
-                <img src="assets/images/channels/siete.svg" alt="siete">
-              </li>
-              <li>
-                <img src="assets/images/channels/once-ninos.svg" alt="once niños">
-              </li>
-              <li>
-                <img src="assets/images/channels/canal-once.svg" alt="Canal once">
-              </li>
-              <li>
-                <img src="assets/images/channels/canal-catorce.svg" alt="Canal catorce">
-              </li>
-              <li>
-                <img src="assets/images/channels/imagen.svg" alt="Imagen">
-              </li>
-              <li>
-                <img src="assets/images/channels/aprende_mas.svg" alt="Aprendemas">
-              </li>
-              <li>
-                <img src="assets/images/channels/canal6.png" alt="canal 6">
-              </li>
-              <li>
-                <img src="assets/images/channels/canal-del-congreso.svg" alt="Canal del congreso">
-              </li>
-              <li>
-                <img src="assets/images/channels/22.1.svg" alt="canal 22.1">
-              </li>
-              <li>
-                <img src="assets/images/channels/22.2.svg" alt="canal 22.2">
-              </li>
-              <li>
-                <img src="assets/images/channels/tv-unam.svg" alt="tv-unam">
-              </li>
-              <li>
-                <img src="assets/images/channels/adn40.png" alt="adn40">
-              </li>
-            </ul>
-            <p class="mb-2 px-1">Canales sujetos a disponibilidad en cada localidad de conformidad con la normatividad aplicable, y de acuerdo a la tecnología del sistema digital</p>
-          </div>
-      </div>
-      <div class="container-app d-flex flex-row align-items-center justify-content-center">
-        <p>INCLUYE:</p>
-        <div class="app-mvs d-flex flex-row align-items-center">
-          <img src="assets/images/logo/mvshub2.png" alt="app mvshub">
-          <p>CON MÁS DE 3,000 CONTENIDOS Y CANALES EN STREAMING <span>SIN COSTO</span></p>
-        </div>
-      </div>
-    </div>
     
       <div class="legal">
         <p>
@@ -628,133 +386,116 @@
         </p>
       </div>
 
+      <button
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop">
+      Abrir modal
+    </button>
 
 <!-- Modal -->
 
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-     
 
-        <div class="container-fluid modal_info">
-          <div class="row">
-            <div class="col-md-12 logo_modal">
-              <img alt="logo dish" src="./assets/images/modal/dish_logo.jpg"/>
-            </div>
-          </div>
-          <div class="row head_modal">
-            <div class="col-md-12">
-              <h3>
-                Empieza a disfrutar de tu Suscripción SEASON PRO
-              </h3>
-              <img alt="Game pass images" src="./assets/images/modal/game_pass.jpg" class="game_pass_logo"/>
-            </div>
-          </div>
-          <br>
-          <div class="row modal_instruc">
-           
-            <div class="col-md-6 firts_column">
-         
-                <img alt="Si no tienes cuenta" src="./assets/images/modal/si_no_tienes_cuenta.jpg" />
-             
-            
-              <ol>
-                <li class="list-item">
-                 <p> Da clic en:<a href="https://www.dazn.com/es-MX/redeem/" target="_blank">www.dazn.com/es-MX/redeem/</a></p>
-                </li>
-                <li class="list-item">
-                  <p>Ingresa tu CÓDIGO DE REGALO</p>
-                </li>
-                <li class="list-item">
-                  <p>Da clic a “Regístrate y Canjea”</p>
-                </li>
-                <li class="list-item">
-                 <p>Ingresa tu correo electrónico</p>
-                </li>
-                <li class="list-item">
-                  <p>Ingresa tu Nombre, Apellido y genera una contraseña</p>
-                </li>
-                <li class="list-item">
-                 <p>Da clic en “Crear cuenta”</p>
-                </li>
-                <li class="list-item">
-                 <p>Te aparecerá una pantalla de Bienvenida</p>
-                </li>
-                <li class="list-item">
-                  <p>Da clic en EMPEZAR A VER</p>
-                </li>
-              </ol>
-            </div>
-            <div class="col-md-6">
-           
-                <img alt="Si tienes cuenta" src="./assets/images/modal/si_tienes_cuenta.jpg" />
-        
-             <ol>
-              <li class="list-item">
-               <p> Da clic en:<a href="https://www.dazn.com/es-MX/redeem/" target="_blank">www.dazn.com/es-MX/redeem/</a></p>
-              </li>
-              <li class="list-item">
-                <p>Ingresa tu CÓDIGO DE REGALO</p>
-              </li>
-              <li class="list-item">
-                <p>Da clic a “¿Ya tienes una cuenta? Inicia Sesión”</p>
-              </li>
-              <li class="list-item">
-               <p>Ingresa tu correo electrónico y contraseña de DAZN</p>
-              </li>
-              <li class="list-item">
-                <p>Te aparecerá una pantalla de Bienvenida</p>
-              </li>
-              <li class="list-item">
-               <p>Da clic en “Crear cuenta”</p>
-              </li>
-              <li class="list-item">
-               <p>Te aparecerá una pantalla de Bienvenida</p>
-              </li>
-              <li class="list-item">
-                <p>Da clic en EMPEZAR A VER</p>
-              </li>
-            </ol>
-            </div>
-          </div>
-          <div class="row foot">
-            <div class="col-md-12">
-              <h3>
-                ¡Y listo! Disfruta de toda la NFL en DAZN <span class="rojo">¡GRATIS!</span>
-              </h3>
-              <p>
-                Vigencia de la promoción al 11 de febrero de 2024
-              </p>
-              <img src="./assets/images/modal/img_footer.jpg" alt="imagen footer">
-            </div>
-          </div>
-        </div>
+      <!-- HEADER -->
+      <div>
+        <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Cerrar"> 
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDA2IDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi40IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDA0OTdBNEU4NjkxMUVCQTEzRkI1QzJFMjdFRkU3MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDA0OTdBNUU4NjkxMUVCQTEzRkI1QzJFMjdFRkU3MCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MDQ5N0EyRTg2OTExRUJBMTNGQjVDMkUyN0VGRTcwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MDQ5N0EzRTg2OTExRUJBMTNGQjVDMkUyN0VGRTcwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hAHsNgAAA1dJREFUeNrMml1IFUEYho9LCIoaZpREF0XdlP2B0SE8UocuUkjMgspuoigIL4woC8GgiJAuskiIgsRDN4EgCpWRVBCW9ENaEFnQL50UIUxNlKCY3qlZkHV/Zueb3e2Fh3Nx9vtm3t2dmW93NsYYi9mQD8rEbyxiLoEfgrcgbnecXWA9GGP/NAoORGjiMpup32Cjl5HjzF4nIzBxkbmrwslIjUfgmRBNnGZy2mU1Ui0Z2ByCiTrmT0nTSIXPwGsBmqhl/jVgGhlVCE4FYGI3U9OIaURVtzSaqCb0o9M0Mk5IckeDiXJGU6FppIqYqBfkKpooJbZdap21KokJ34DZPk0UE9vc4LSObCUm/gDmSpooAlOEtrZ7rexJopmvYLGHCf7/JKGNnbK1Vgn4SWjoO1jiYGIeGCbk3u90gpzO2hrRIVXxonOdJSefED4Rch5xu9Jut8AiMES81RIiVyZ4TcjT4DXuvAblQvCFaGYH6CLEN8pMIBl/3bgrHzwEy2Ph6wI4LHOgjBGuLPAErAzRRCvYJ3uwIXncFFgLHoRkot2PCT9XZLpug7IATXSDzX6DDIWGykFHQCYeqZhQNcK1DaQ0m3gOEqrBBqHhvWJA6lAfKKEkUBkjVvHp8RzPpRg/AXKpnTA0nM0BYjyf2lvIvYjwEdWqbpCt2hfKrVUJOjUP+I9irAyFNUY2gbsBTcGDIA7SQY+RRIAmuBaAflAU5BVZDV6EVKZMgiR4qvuKLBVVcFjKFoVqQqeRQrHy5ih2apxgqAds0WGEP488A3mKHeGdWAbGCGZugCrKOlIA3hPWhkOWtyeDxLVmj8qjriFevKnqlE3O+eAd0UyNXyO9hMaaXPLmEV9EcB2TNXKP0MhViZJiFvFEzdhBs2vkJiF5m88aqYdopsnJyHVC0g7Fgq+LaKbZaqSVWLlSqug2opk6M9EJQpLHmnatWgh9SPMEOYQEfZr3Ec8r9mPYIDxmfgbrNddX/LG5USEuZZ6JfoVNnYIAt6nrffSlHWRMLx9kt6lHxD5H0B8OHJXoy3276ZebSXsETrhs4gTBQdlJxho4x6VI/AVWRfBxjd2HBK9kShS+s/TSJjge4edOK8SnI/xWOguyZN+iZIIG8dz8DVwRbwP/W/0RYABzDx3P9z/MBQAAAABJRU5ErkJggg==" alt="close" class="iconcerrar" >
 
+        </button>
 
-
-
-
-
-
-
-
-
-
-
-
-
+   
 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
+
+    
+    <!-- BODY -->
+<div class="modal-body">
+
+  <!-- TÍTULO -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <p class="plan-name m-0">82 CANALES</p>
+    </div>
+  </div>
+
+  <!-- GRUPOS DE CANALES -->
+  <div class="row">
+
+    <!-- Grupo 1 -->
+    <div class="col-12 col-md-6 mb-4">
+      <section class="channels-group">
+        <h3>TV abierta</h3>
+        <p>7 Canales</p>
+        <ul class="channels-list">
+          <li><img src="logos/once-ninos.png" alt=""></li>
+          <li><img src="logos/tv-unam.png" alt=""></li>
+          <li><img src="logos/canal-22.png" alt=""></li>
+          <li><img src="logos/adn.png" alt=""></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Grupo 2 -->
+    <div class="col-12 col-md-6 mb-4">
+      <section class="channels-group">
+        <h3>TV de Paga</h3>
+        <p>25 Canales</p>
+        <ul class="channels-list">
+          <li><img src="logos/fox.png" alt=""></li>
+          <li><img src="logos/espn.png" alt=""></li>
+          <li><img src="logos/hbo.png" alt=""></li>
+          <li><img src="logos/tnt.png" alt=""></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Grupo 3 -->
+    <div class="col-12 col-md-6 mb-4">
+      <section class="channels-group">
+        <h3>Infantiles</h3>
+        <p>10 Canales</p>
+        <ul class="channels-list">
+          <li><img src="logos/cartoon.png" alt=""></li>
+          <li><img src="logos/disney.png" alt=""></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Grupo 4 -->
+    <div class="col-12 col-md-6 mb-4">
+      <section class="channels-group">
+        <h3>Noticias</h3>
+        <p>8 Canales</p>
+        <ul class="channels-list">
+          <li><img src="logos/cnn.png" alt=""></li>
+          <li><img src="logos/bbc.png" alt=""></li>
+        </ul>
+      </section>
+    </div>
+
+  </div>
+</div>
+
+  <!-- BOTÓN CONTRATAR -->
+  <button class="btn btn-danger btn-contratar">
+    Contratar
+  </button>
+
     </div>
   </div>
 </div>
+
+
 
 
 
@@ -854,6 +595,13 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   
+
+
+
+
+
+
+
+
   </body>
 </html>
