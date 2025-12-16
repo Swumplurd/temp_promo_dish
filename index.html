@@ -80,7 +80,7 @@
 .modal-body {
   padding: 0;
   overflow-y: auto;
-  max-height: 80vh;
+  max-height: 70vh;
   padding: 3%;
 }
 
@@ -131,23 +131,23 @@
 .channels-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-  gap: 16px;
+  gap: 5px;
+
+  padding-left: 0px;
 }
 
 .channels-list li {
   list-style: none;
-  background: #eee;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
+
+ 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .channels-list img {
-  max-width: 45px;
-  max-height: 45px;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 /* ====== FOOTER BOTÓN ====== */
@@ -406,15 +406,21 @@
       <button
       class="btn btn-primary"
       data-bs-toggle="modal"
-      data-bs-target="#staticBackdrop">
-      Abrir modal
+      data-bs-target="#CanalesdeTV">
+      Canales de TV
     </button>
+<br/>
+    <button
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#Canalesdestreaming">
+   Canales de streaming
+  </button>
 
-<!-- Modal -->
-
+<!-- Canales de TV -->
 <div
   class="modal fade"
-  id="staticBackdrop"
+  id="CanalesdeTV"
   data-bs-backdrop="static"
   data-bs-keyboard="false"
   tabindex="-1"
@@ -445,7 +451,7 @@
         <!-- TÍTULO -->
         <div class="row mb-4 titlemodal">
           <div class="col-12">
-            <p class="plan-name m-0">82 CANALES</p>
+            <p class="plan-name m-0">82 CANALES DE TV</p>
           </div>
         </div>
 
@@ -504,6 +510,349 @@
             </section>
           </div>
 
+              <!-- Grupo 5 -->
+              <div class="col-12 col-md-6 mb-4">
+                <section class="channels-group">
+                  <h3>Infantiles</h3>
+                  <p>&nbsp;10 Canales</p>
+                  <ul class="channels-list">
+                    <li><img src="logos/cartoon.png" alt=""></li>
+                    <li><img src="logos/disney.png" alt=""></li>
+                  </ul>
+                </section>
+              </div>
+    
+              <!-- Grupo 6 -->
+              <div class="col-12 col-md-6 mb-4">
+                <section class="channels-group">
+                  <h3>Noticias</h3>
+                  <p>&nbsp;8 Canales</p>
+                  <ul class="channels-list">
+                    <li><img src="logos/cnn.png" alt=""></li>
+                    <li><img src="logos/bbc.png" alt=""></li>
+                  </ul>
+                </section>
+              </div>
+
+              
+        </div>
+      </div>
+
+      <!-- BOTÓN CONTRATAR -->
+      <button class="btn btn-danger btn-contratar">
+        Contratar
+      </button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Canales de Streaming -->
+<div
+  class="modal fade"
+  id="Canalesdestreaming"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- HEADER -->
+      <div>
+        <button
+          type="button"
+          class="btn-close modal-close"
+          data-bs-dismiss="modal"
+          aria-label="Cerrar"
+        >
+          <img
+            src="assets/images/img/close_modal.png"
+            alt="close"
+            class="iconcerrar"
+          >
+        </button>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body">
+
+        <!-- TÍTULO -->
+        <div class="row mb-4 titlemodal">
+          <div class="col-12">
+            <p class="plan-name m-0">MÁS DE 120 CANALES DE STREAMING</p>
+          </div>
+        </div>
+
+        <!-- GRUPOS DE CANALES -->
+        <div class="row ofertamodal">
+
+          <!-- Grupo 1 -->
+          <div class="col-12 col-md-6 mb-4">
+            <section class="channels-group">
+              <h3>Películas</h3>
+              <p>&nbsp;15 Canales</p>
+              <ul class="channels-list">
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/CanelaCinema.webp" alt="CanelaCinema"></li>
+                <li><img src="http://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/CanelaClasicos.webp" alt="CanelaClasicos"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/Cindie_Lite_logo.webp" alt="Cindie"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/cinecannal.webp" alt="CineCanal"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/cine_latino.webp" alt="Cine Latino"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/cinema.webp" alt="Cinema"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/cinemax.webp" alt="Cinemax"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/claro_cinema.webp" alt="Claro Cinema"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/mc.webp" alt="MC"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/multipremiere.webp" alt="Multipremiere"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/pelimex.png" alt="Pelimex"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/romance_channel.webp" alt="Romance Channel"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/space.webp" alt="Space"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/studio_universall.webp" alt="Studio Universal"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/tnt.webp" alt="TNT"></li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Grupo 2 -->
+          <div class="col-12 col-md-6 mb-4">
+            <section class="channels-group">
+              <h3>Series y Películas</h3>
+              <p>&nbsp;15 Canales</p>
+              <ul class="channels-list">
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/a_e.webp" alt="A&E"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/amc.webp" alt="AMC"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/axn.webp" alt="AXN"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/dhe.webp" alt="DHE"></li>
+
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/europa_europa.webp" alt="EUROPA EUROPA"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/film_and_arts.webp" alt="Filmns and Arts"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/fx.webp" alt="FX"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/lifetime.webp" alt="Lifetime"></li>
+
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/sony.webp" alt="Sony"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/star_channel.webp" alt="Star Channel"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/tnt_series.webp" alt="TNT Series"></li>
+
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/universal.webp" alt="Universal"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/USA_logo.webp" alt="USA Logo"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/wb.webp" alt="wb"></li>
+               
+              </ul>
+            </section>
+          </div>
+
+          <!-- Grupo 3 -->
+          <div class="col-12 col-md-6 mb-4">
+            <section class="channels-group">
+              <h3>Entretenimiento</h3>
+              <p>&nbsp;9 Canales</p>
+              <ul class="channels-list">
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/amas.webp" alt="Amas"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/Antena_3.webp" alt="Antena Tres"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/arirang.webp" alt="Arirang"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/azteca_int.webp" alt="Azteca Internacional"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/canelaTV.webp" alt="CanelaTV"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/comedy_central.webp" alt="Comedy Central"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/laltin_angels.webp" alt="Latin Angels"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/mvs_tv.webp" alt="mvsTV"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/tv5_monde.webp" alt="tv5 mode"></li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Grupo 4 -->
+          <div class="col-12 col-md-6 mb-4">
+            <section class="channels-group">
+              <h3>Estilo de vida</h3>
+              <p>&nbsp;7 Canales</p>
+              <ul class="channels-list">
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/hola_tv.webp" alt="Hola TV"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/clic.webp" alt="Clic"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/home_health.webp" alt="Home and Healt"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/tlc.webp" alt="TLC"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/e!_entertainment.webp" alt="Entertainment"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/el_gourmet.webp" alt="El gourment"></li>
+                <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/mas_chic.webp" alt="Mas chic"></li>
+
+             
+              </ul>
+            </section>
+          </div>
+
+              <!-- Grupo 5 -->
+              <div class="col-12 col-md-6 mb-4">
+                <section class="channels-group">
+                  <h3>Deportes</h3>
+                  <p>&nbsp;10 Canales</p>
+                  <ul class="channels-list">
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/aym_sports.webp" alt="Aym Sports"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/azteca_deportes.webp" alt="Azteca Deportes"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/CanelaDeportes.webp" alt="Canela Deportes"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/claro_sports.webp" alt="Claro Sports"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/discovery_turbo.webp" alt="Discovery Turbo"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/espn.webp" alt="ESPN"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/espn4.webp" alt="ESPN4"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/espn_2.webp" alt="ESPN2"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/espn_nort.webp" alt="ESPN3"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/hitv_logo.webp" alt="HTV"></li>
+
+                  </ul>
+                </section>
+              </div>
+    
+              <!-- Grupo 6 -->
+              <div class="col-12 col-md-6 mb-4">
+                <section class="channels-group">
+                  <h3>Infantil</h3>
+                  <p>&nbsp;11 Canales</p>
+                  <ul class="channels-list">
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/babytv.webp" alt="BabyTV"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/babyfirts.webp" alt="BabiFirts"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/cartoon_network.webp" alt="Cartoon Network"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/discovery_kids.webp" alt="Discovery Kids"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/disney_channel.webp" alt="Disney Channel"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/disney_junior.webp" alt="Disney Junior"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/dreamworks.webp" alt="Dreamworks"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/fix_&_foxi.webp" alt="fix and Foxi"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/nickelodeon.webp" alt="nickelodeon"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/nick_jr.webp" alt="nick Jr"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/teen_nick.webp" alt="Teen nick"></li>
+                  </ul>
+                </section>
+              </div>
+
+                 <!-- Grupo 6 -->
+                 <div class="col-12 col-md-6 mb-4">
+                  <section class="channels-group">
+                    <h3>Música</h3>
+                    <p>&nbsp;9 Canales</p>
+                    <ul class="channels-list">
+                      <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/exa_tv.webp" alt="ExaTV"></li>
+                      <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/lamejor.webp" alt="La mejor"></li>
+                      <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/mtv.webp" alt="MTV"></li>
+                      <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/mtv_00s.webp" alt="MTV 00"></li>
+                      <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/mtvhits.webp" alt="MTV Hits"></li>
+                      <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/teleritmo.png" alt="Teleritmo"></li>
+                      <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/trace_latina.webp" alt="Trace latina"></li>
+                      <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/trace_urban.webp" alt="Trace urban"></li>
+                      <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/video_rola.webp" alt="video rola"></li>
+                    </ul>
+                  </section>
+                </div>
+
+
+                   <!-- Grupo 6 -->
+              <div class="col-12 col-md-6 mb-4">
+                <section class="channels-group">
+                  <h3>Novelas</h3>
+                  <p>&nbsp;6 Canales</p>
+                  <ul class="channels-list">
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/CanelaDrama.webp" alt="CanalDrama"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/Azteca_corazon.webp" alt="Azteca Corazón"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/pasiones.webp" alt="Pasiones"></li>
+
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/telemundo.webp" alt="Telemundo"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/tnt_novelas.webp" alt="TNT Novelas"></li>
+                    <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/vive_kanal_drama_logo.webp" alt="Kanal D´ Drama"></li>
+                      
+                    
+                  </ul>
+                </section>
+              </div>
+
+                       <!-- Grupo 6 -->
+                       <div class="col-12 col-md-6 mb-4">
+                        <section class="channels-group">
+                          <h3>Conocimiento</h3>
+                          <p>&nbsp;7 Canales</p>
+                          <ul class="channels-list">
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/animal_planet.webp" alt="Animal Planet"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/arts.webp" alt="Arts"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/discovery.webp" alt="Discovery Kids"></li>
+
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteExtendido/logo_canal/history_2.webp" alt="History 2"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/history.webp" alt="History"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/investigation_discovery.webp" alt="I Discovery"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/national_geographic.webp" alt="NatGeo"></li>
+                      
+                          </ul>
+                        </section>
+                      </div>
+            
+          
+                     <!-- Grupo 6 -->
+                     <div class="col-12 col-md-6 mb-4">
+                      <section class="channels-group">
+                        <h3>Noticias</h3>
+                        <p>&nbsp;8 Canales</p>
+                        <ul class="channels-list">
+                          <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/cgtn.webp" alt="CGTN"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/cnn_espanol.webp" alt="CNN ESPAÑOL"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/france_24.webp" alt="France"></li>
+
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/france_24_english.webp" alt="France 24 English"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/france_24_espanol.webp" alt="France 24 Español"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/justicia.webp" alt="Justicia TV"></li>
+
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/milenio_tv.webp" alt="Milenio TV"></li>
+                            <li><img src="https://d31nz91qboyide.cloudfront.net/mvshub/modales/paqueteEsencial/logo_canal/teleformula.webp" alt="teleformula"></li>
+                           
+                        </ul>
+                      </section>
+                    </div>
+
+               <!-- Grupo 6 -->
+               <div class="col-12 col-md-6 mb-4">
+                <section class="channels-group">
+                  <h3>Religión</h3>
+                  <p>&nbsp;8 Canales</p>
+                  <ul class="channels-list">
+                    <li><img src="logos/cnn.png" alt=""></li>
+                    <li><img src="logos/bbc.png" alt=""></li>
+                  </ul>
+                </section>
+              </div>
+
+             <!-- Grupo 6 -->
+             <div class="col-12 col-md-6 mb-4">
+              <section class="channels-group">
+                <h3>TV Abierta</h3>
+                <p>&nbsp;8 Canales</p>
+                <ul class="channels-list">
+                  <li><img src="logos/cnn.png" alt=""></li>
+                  <li><img src="logos/bbc.png" alt=""></li>
+                </ul>
+              </section>
+            </div>
+
+          
+             <!-- Grupo 6 -->
+             <div class="col-12 col-md-6 mb-4">
+              <section class="channels-group">
+                <h3>Regionales</h3>
+                <p>&nbsp;8 Canales</p>
+                <ul class="channels-list">
+                  <li><img src="logos/cnn.png" alt=""></li>
+                  <li><img src="logos/bbc.png" alt=""></li>
+                </ul>
+              </section>
+            </div>
+
+             <!-- Grupo 6 -->
+             <div class="col-12 col-md-6 mb-4">
+              <section class="channels-group">
+                <h3>Radio</h3>
+                <p>&nbsp;8 Canales</p>
+                <ul class="channels-list">
+                  <li><img src="logos/cnn.png" alt=""></li>
+                  <li><img src="logos/bbc.png" alt=""></li>
+                </ul>
+              </section>
+            </div>
+              
         </div>
       </div>
 
