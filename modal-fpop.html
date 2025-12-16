@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="https://dish.com.mx/favicon.png">
+    <title>Más Deportes</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PKN539T');</script>
+      <!-- End Google Tag Manager -->
+  </head>
+
+<style>
+/* ====== MODAL BASE ====== */
+.modal-content.modal {
+  border-radius: 24px;
+  padding: 40px 40px 80px;
+  border: none;
+}
+
+
+/* Botón X */
+.modal-close.btn-close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background-color: #e31c23;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  opacity: 1;
+  filter: none;
+  color: #fff;
+  z-index: 9999;
+}
+.iconcerrar{
+  width: 20px;
+}
+
+
+
+/* Quita ícono default */
+.modal-close.btn-close::before {
+  display: none;
+}
+
+/* Título */
+.modal-title {
+  width: 100%;
+  text-align: left;
+}
+
+.plan-name {
+  font-size: min(max(3vw, 1.5em), 2em);
+  font-weight: 800;
+  color: #e31c23;
+ padding-left: 10px;
+}
+
+/* ====== BODY ====== */
+.modal-body {
+  padding: 0;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+
+
+
+
+
+/* ====== TARJETAS ====== */
+.channels-group {
+  border: 1px solid #e31c23;
+  border-radius: 20px;
+  padding: 24px;
+  background: #fff5f5;
+  position: relative;
+}
+
+/* Badgejita roja */
+.channels-group h3 {
+  position: absolute;
+  top: -22px;
+  left: 24px;
+  background: #e31c23;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  box-shadow: 0 8px 20px rgba(227,28,35,.35);
+  
+}
+
+
+/* Texto canales */
+.channels-group p {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+/* ====== LOGOS ====== */
+.channels-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 16px;
+}
+
+.channels-list li {
+  list-style: none;
+  background: #eee;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.channels-list img {
+  max-width: 45px;
+  max-height: 45px;
+}
+
+/* ====== FOOTER BOTÓN ====== */
+.modal-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: white;
+  border-radius: 0 0 24px 24px;
+}
+
+.btn-contratar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e31c23;
+  border-radius: 40px;
+  padding: 16px 48px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 10px 30px rgba(227,28,35,.4);
+  z-index: 99999;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 991px) {
+  .modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content.modal {
+    padding: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+  <body>
+
+
+
+  
+
+    
+     <!-- Google Tag Manager (noscript) -->
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKN539T"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+      <header id="header" class="">
+        <div class="d-flex flex-row justify-content-between align-items-start my-3">
+          <a class="flex align-items-center mx-5"alt="home"href="https://www.dish.com.mx/" data-v-2a977a16>
+            <h1 class="m-0"data-v-2a977a16>
+              <img src="https://www.dish.com.mx/img/logo.057314c1.svg" alt="Dish logo" title="Dish" class="pl-4 xs:pl-0 sm:pl-0"id="dish_logo"data-v-2a977a16>
+            </h1>
+          </a>
+          <div class="nav-menu d-none d-lg-block">
+            <div class="container d-flex flex-row justify-content-end">
+              <div class="dropdown my-3">
+                <ul type="button">
+                  <a href="https://www.dish.com.mx/home-79">Inicio</a>
+                </ul>
+              </div>
+                <div class="dropdown my-3">
+                <ul type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a href="https://www.dish.com.mx/paquetes">Paquetes
+                    <img src="https://www.dish.com.mx/img/icon-arrow-down-dark.b85e76f6.svg" class="ms-2" alt="navigation-child-Paquetes" title="nav-icon">
+                  </a>
+                </ul>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item borderBttm" href="https://www.dish.com.mx/paquetes">
+                    Todos los paquetes
+                  </a>
+                  <a class="dropdown-item" href="https://www.dish.com.mx/buscador-de-canales">
+                    Buscador de canales</a>
+                </div>
+              </div>
+                  <div class="dropdown my-3">
+                <ul type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a href="https://www.dish.com.mx/home-79">
+                    Ayuda
+                    <img src="https://www.dish.com.mx/img/icon-arrow-down-dark.b85e76f6.svg" class="ms-2" alt="navigation-child-Ayuda" title="nav-icon">
+                  </a> 
+                </ul>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item  borderBttm" href="https://www.dish.com.mx/preguntas-frecuentes">
+                    Preguntas frecuentes
+                  </a>
+                  <a class="dropdown-item  borderBttm" href="https://www.dish.com.mx/contacto">
+                    Atención al cliente
+                  </a>
+                  <a class="dropdown-item  borderBttm" href="https://www.dish.com.mx/numero-de-suscriptor">
+                    Número de suscriptor
+                  </a>
+                  <a class="dropdown-item  borderBttm" href="https://www.dish.com.mx/tutoriales">
+                    Tutoriales
+                  </a>
+                  <a class="dropdown-item  borderBttm" href="https://www.dish.com.mx/avisos">
+                    Avisos
+                  </a>
+                </div>
+              </div>
+                
+                  <div class="dropdown my-3 me-4">
+                <ul type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a href="https://www.dish.com.mx/home-79">
+                    Ya soy cliente
+                    <img src="https://www.dish.com.mx/img/icon-arrow-down-dark.b85e76f6.svg" class="ms-2" alt="navigation-child-Cliente" title="nav-icon">
+                  </a> 
+                </ul>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item  borderBttm" href="https://midish.dish.com.mx/login.php" target="_blank">
+                    Inicia sesión
+                  </a>
+                  <a class="dropdown-item" href="https://www.dish.com.mx/lugares-de-pago">
+                    Lugares de pago
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input type="checkbox" id="check" />
+            <div class="fondo d-block d-lg-none"></div>  
+              <label class="button d-block d-lg-none" for="check">
+                <img src="  https://www.dish.com.mx/img/icon-menu.e04c99b0.svg" alt="">
+              </label>
+
+  <div class="menu">
+    <div class="header-nav-mobile d-flex flex-column">
+      <div class="close">
+        <input type="checkbox" id="check" />
+        <div class="fondo d-block d-lg-none"></div>  
+          <label class="button d-block d-lg-none" for="check">
+                      <img class="exit-nav" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDA2IDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi40IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDA0OTdBNEU4NjkxMUVCQTEzRkI1QzJFMjdFRkU3MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDA0OTdBNUU4NjkxMUVCQTEzRkI1QzJFMjdFRkU3MCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MDQ5N0EyRTg2OTExRUJBMTNGQjVDMkUyN0VGRTcwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MDQ5N0EzRTg2OTExRUJBMTNGQjVDMkUyN0VGRTcwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hAHsNgAAA1dJREFUeNrMml1IFUEYho9LCIoaZpREF0XdlP2B0SE8UocuUkjMgspuoigIL4woC8GgiJAuskiIgsRDN4EgCpWRVBCW9ENaEFnQL50UIUxNlKCY3qlZkHV/Zueb3e2Fh3Nx9vtm3t2dmW93NsYYi9mQD8rEbyxiLoEfgrcgbnecXWA9GGP/NAoORGjiMpup32Cjl5HjzF4nIzBxkbmrwslIjUfgmRBNnGZy2mU1Ui0Z2ByCiTrmT0nTSIXPwGsBmqhl/jVgGhlVCE4FYGI3U9OIaURVtzSaqCb0o9M0Mk5IckeDiXJGU6FppIqYqBfkKpooJbZdap21KokJ34DZPk0UE9vc4LSObCUm/gDmSpooAlOEtrZ7rexJopmvYLGHCf7/JKGNnbK1Vgn4SWjoO1jiYGIeGCbk3u90gpzO2hrRIVXxonOdJSefED4Rch5xu9Jut8AiMES81RIiVyZ4TcjT4DXuvAblQvCFaGYH6CLEN8pMIBl/3bgrHzwEy2Ph6wI4LHOgjBGuLPAErAzRRCvYJ3uwIXncFFgLHoRkot2PCT9XZLpug7IATXSDzX6DDIWGykFHQCYeqZhQNcK1DaQ0m3gOEqrBBqHhvWJA6lAfKKEkUBkjVvHp8RzPpRg/AXKpnTA0nM0BYjyf2lvIvYjwEdWqbpCt2hfKrVUJOjUP+I9irAyFNUY2gbsBTcGDIA7SQY+RRIAmuBaAflAU5BVZDV6EVKZMgiR4qvuKLBVVcFjKFoVqQqeRQrHy5ih2apxgqAds0WGEP488A3mKHeGdWAbGCGZugCrKOlIA3hPWhkOWtyeDxLVmj8qjriFevKnqlE3O+eAd0UyNXyO9hMaaXPLmEV9EcB2TNXKP0MhViZJiFvFEzdhBs2vkJiF5m88aqYdopsnJyHVC0g7Fgq+LaKbZaqSVWLlSqug2opk6M9EJQpLHmnatWgh9SPMEOYQEfZr3Ec8r9mPYIDxmfgbrNddX/LG5USEuZZ6JfoVNnYIAt6nrffSlHWRMLx9kt6lHxD5H0B8OHJXoy3276ZebSXsETrhs4gTBQdlJxho4x6VI/AVWRfBxjd2HBK9kShS+s/TSJjge4edOK8SnI/xWOguyZN+iZIIG8dz8DVwRbwP/W/0RYABzDx3P9z/MBQAAAABJRU5ErkJggg==" alt="close" title="menu close" class="max-h-5">
+          </label>
+      </div>
+      
+        <img class="nav-dish" src="https://dish.com.mx/img/logo-light.7026fbf8.svg" alt="Dish logo" title="Dish" width="81">
+      </div>
+      <ul class="movile">
+        <li class="nav">
+          <a href="https://www.dish.com.mx/">
+            Inicio
+          </a>
+          </li>
+          <li class="nav d-flex flex-column">
+            <a class="btn btn-drop" data-bs-toggle="collapse" href="#packs-collapse" role="button" aria-expanded="false" aria-controls="packs-collapse">
+              Paquetes
+              <img class="mx-2" src="https://www.dish.com.mx/img/icon-arrow-down-light.1bfa83b1.svg" class="ml-3" alt="Paquetes-child">
+            </a>
+            <div class="collapse coll" id="packs-collapse">
+                <a href="https://www.dish.com.mx/paquetes">
+                  Todos los paquetes
+                </a>
+                <a href="https://www.dish.com.mx/buscador-de-canales">
+                  Buscador de canales
+                </a>
+            </div>
+          </li>
+          <li class="nav d-flex flex-column">
+            <a class="btn btn-drop" data-bs-toggle="collapse" href="#help-collapse" role="button" aria-expanded="false" aria-controls="help-collapse">
+              Ayuda
+              <img class="mx-2" src="https://www.dish.com.mx/img/icon-arrow-down-light.1bfa83b1.svg" class="ml-3" alt="Paquetes-child">
+            </a>
+            <div class="collapse coll" id="help-collapse">
+              <a href="https://www.dish.com.mx/preguntas-frecuentes">
+                Preguntas frecuentes
+              </a>
+              <a href="https://www.dish.com.mx/contacto">
+                Atención al cliente
+              </a>
+              <a href="https://www.dish.com.mx/numero-de-suscriptor">
+                Número de suscriptor
+              </a>
+              <a href="https://www.dish.com.mx/tutoriales">
+                Tutoriales
+              </a>
+              <a href="https://www.dish.com.mx/avisos">
+                Avisos
+              </a>
+            </div>
+          </li>
+          <li class="nav d-flex flex-column">
+            <a class="btn btn-drop" data-bs-toggle="collapse" href="#client-collapse" role="button" aria-expanded="false" aria-controls="client-collapse">
+              Ya soy cliente
+              <img class="mx-2" src="https://www.dish.com.mx/img/icon-arrow-down-light.1bfa83b1.svg" class="ml-3" alt="Paquetes-child" data-v-2a977a16="">
+            </a>
+            <div class="collapse coll" id="client-collapse">
+              <a href="https://midish.dish.com.mx/login.php"target="_blank">
+                  Iniciar sesión
+              </a>
+              <a href="https://www.dish.com.mx/lugares-de-pago">
+                Lugares de pago
+              </a>
+            </div>
+          </li>
+      </ul>
+  </div>
+        </div>
+      </header>
+      
+
+    
+      <div class="legal">
+        <p>
+          Promoción válida en toda la República Mexicana. Vigencia del 13 de diciembre del 2023 al 11 de febrero del 2024. No aplica con otras promociones o descuentos. Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V. y Freedompop México, S.A. de C.V. son responsables únicamente de sus respectivos servicios, siendo la primera la responsable de esta promoción. NFL Game Pass es un servicio cuya transmisión y contenido es responsabilidad de NFL Game Pass en DAZN consulta compatibilidad con tus dispositivos móviles en <a href="https://info.mvshub.com.mx" target="_blank">https://info.mvshub.com.mx/</a> .El acceso a los contenidos dependerá del paquete contratado. Se recomienda que cuente con conexión a internet de banda ancha para disfrutar del servicio en dispositivos móviles. Todo material, incluyendo imágenes, texto, diseños, íconos, programas, vídeos y cualquier otro elemento, constituyen derechos de autor y propiedad intelectual usada bajo autorización y protegidos por leyes mexicanas e internacionales. Cualquier marca, producto, servicio, submarca o logotipo utilizada en la presente es propiedad de sus respectivos dueños y/o alguno de sus asociados o filiales. El contenido de este documento no debe ser interpretado como permiso otorgado, implícito, o de alguna otra forma, licencia o derecho al uso de cualquier marca o logotipo registrado exhibida en este documento. Las personas físicas participantes deberán ser mayores de 18 años, residir en la República Mexicana y cumplir con lo establecido con los términos y condiciones contenidas en <a href=" https://acortar.link/qiYYf6" target="_blank">https://acortar.link/qiYYf6</a> .En caso de que el CLIENTE no acepte la totalidad de los términos y condiciones de la presente promoción y/o de Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V. , deberá abstenerse de participar en la presente promoción.
+        </p>
+        <p>
+          *Los servicios ilimitados incluidos están sujetos a la Política de Uso Justo de FREEDOMPOP MÉXICO descrita en el link: <a href="https://www.freedompop.mx/usojusto.html" target="_blank">https://www.freedompop.mx/usojusto.html</a>
+
+        </p>
+      </div>
+
+      <button
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop">
+      Abrir modal
+    </button>
+
+<!-- Modal -->
+
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- HEADER -->
+      <div>
+        <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Cerrar"> 
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDA2IDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi40IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDA0OTdBNEU4NjkxMUVCQTEzRkI1QzJFMjdFRkU3MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDA0OTdBNUU4NjkxMUVCQTEzRkI1QzJFMjdFRkU3MCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MDQ5N0EyRTg2OTExRUJBMTNGQjVDMkUyN0VGRTcwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MDQ5N0EzRTg2OTExRUJBMTNGQjVDMkUyN0VGRTcwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hAHsNgAAA1dJREFUeNrMml1IFUEYho9LCIoaZpREF0XdlP2B0SE8UocuUkjMgspuoigIL4woC8GgiJAuskiIgsRDN4EgCpWRVBCW9ENaEFnQL50UIUxNlKCY3qlZkHV/Zueb3e2Fh3Nx9vtm3t2dmW93NsYYi9mQD8rEbyxiLoEfgrcgbnecXWA9GGP/NAoORGjiMpup32Cjl5HjzF4nIzBxkbmrwslIjUfgmRBNnGZy2mU1Ui0Z2ByCiTrmT0nTSIXPwGsBmqhl/jVgGhlVCE4FYGI3U9OIaURVtzSaqCb0o9M0Mk5IckeDiXJGU6FppIqYqBfkKpooJbZdap21KokJ34DZPk0UE9vc4LSObCUm/gDmSpooAlOEtrZ7rexJopmvYLGHCf7/JKGNnbK1Vgn4SWjoO1jiYGIeGCbk3u90gpzO2hrRIVXxonOdJSefED4Rch5xu9Jut8AiMES81RIiVyZ4TcjT4DXuvAblQvCFaGYH6CLEN8pMIBl/3bgrHzwEy2Ph6wI4LHOgjBGuLPAErAzRRCvYJ3uwIXncFFgLHoRkot2PCT9XZLpug7IATXSDzX6DDIWGykFHQCYeqZhQNcK1DaQ0m3gOEqrBBqHhvWJA6lAfKKEkUBkjVvHp8RzPpRg/AXKpnTA0nM0BYjyf2lvIvYjwEdWqbpCt2hfKrVUJOjUP+I9irAyFNUY2gbsBTcGDIA7SQY+RRIAmuBaAflAU5BVZDV6EVKZMgiR4qvuKLBVVcFjKFoVqQqeRQrHy5ih2apxgqAds0WGEP488A3mKHeGdWAbGCGZugCrKOlIA3hPWhkOWtyeDxLVmj8qjriFevKnqlE3O+eAd0UyNXyO9hMaaXPLmEV9EcB2TNXKP0MhViZJiFvFEzdhBs2vkJiF5m88aqYdopsnJyHVC0g7Fgq+LaKbZaqSVWLlSqug2opk6M9EJQpLHmnatWgh9SPMEOYQEfZr3Ec8r9mPYIDxmfgbrNddX/LG5USEuZZ6JfoVNnYIAt6nrffSlHWRMLx9kt6lHxD5H0B8OHJXoy3276ZebSXsETrhs4gTBQdlJxho4x6VI/AVWRfBxjd2HBK9kShS+s/TSJjge4edOK8SnI/xWOguyZN+iZIIG8dz8DVwRbwP/W/0RYABzDx3P9z/MBQAAAABJRU5ErkJggg==" alt="close" class="iconcerrar" >
+
+        </button>
+
+   
+
+      </div>
+
+    
+    <!-- BODY -->
+<div class="modal-body">
+
+  <!-- TÍTULO -->
+
+  <div class="col-12 px-5 pt-5">
+    <p class="plan-name m-0">LÍNEA CELULAR FREEDOMPOP INCLUÍDA</p>
+  </div>
+
+  <!-- GRUPOS FPOP -->
+  <div class="d-flex flex-column flex-xl-row align-items-center justify-content-center">
+    <div class="d-flex justify-content-center justify-content-xl-start flex-wrap gap-3 col-lg-7 py-5">
+
+      <!-- Grupo 1 -->
+      <div class="group-fpop col-12 col-md-5">
+        <section class="modal-include-fpop">
+          <p>Minutos</p>
+          <span>
+            200
+          </span>
+        </section>
+      </div>
+  
+      <!-- Grupo 2 -->
+      <div class="group-fpop col-12 col-md-5">
+        <section class="modal-include-fpop">
+          <p>SMS</p>
+          <span>
+            200
+          </span>
+        </section>
+      </div>
+  
+      <!-- Grupo 3 -->
+      <div class="group-fpop col-12 col-md-5">
+        <section class="modal-include-fpop">
+          <p class="d-flex flex-wrap">WhatsApp
+            <img class="g-img-whats" src="assets/icons/whats.png" alt="WhatsApp">
+          </p>
+          <span>
+            ILIMITADO
+          </span>
+        </section>
+      </div>
+  
+      <!-- Grupo 4 -->
+      <div class="group-fpop col-12 col-md-5">
+        <section class="modal-include-fpop">
+          <p>Para navegar</p>
+          <span>
+            3GB
+          </span>
+        </section>
+      </div>
+  
+      <!-- Grupo 5 -->
+      <div class="group-fpop col-12 col-md-5">
+        <section class="modal-include-fpop">
+          <p>Para ver contenido <br>
+            <img class="g-img-mvshub" src="assets/images/logo/mvshub-color.png" alt="mvshub">
+          </p>
+          <span>
+            2GB
+          </span>
+        </section>
+      </div>
+  
+    </div>
+  
+    <div class="col-12 col-xl-4 d-flex justify-content-center align-items-center pb-5 py-md-0">
+      <img class="img-fluid px-3 img-fpop" src="assets/images/img/chicaFpop.png" alt="FreedomPop">
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer p-5">
+  <!-- BOTÓN CONTRATAR -->
+  <button class="btn btn-danger btn-contratar">
+    Contratar
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+      <footer>
+        <div>
+          <p class="text-2xl"> Contrataciones
+          <a href="tel:525555123123"target="_blank"class="font-medium">5555123123</a>
+          <span>|</span>
+          Atención a Clientes
+          <a href="tel:525556101010" target="_blank" class="font-medium">5556101010</a>
+        </p>
+        <div class="flex-bg contain-footer col d-flex flex-row">
+          <div class="contact-bg col-md-5 col-sm-12 gradient-back py-4 px-3">
+            <img src="https://www.dish.com.mx/img/logo-light.7026fbf8.svg" alt="Dish">
+            <div class="contact-bg d-flex align-items-start justify-content-center">
+              <h2 class="text-2xl text-white text-uppercase my-3">Atención a clientes</h2>
+              <div class="btn-contact flex-1 d-flex align-items-center justify-content-center">
+                <a href="https://dish.com.mx/contacto" class="btn-red-footer text-center" target="" alt="banner text link" rel="noreferrer"> Da click aquí</a>
+              </div>
+            </div>
+          </div>
+          <div class="privacity col-md-7 col-sm-12 d-flex flex-row mx-5">
+            <div class="mx-2">
+              <p class="text-white xs:text-center xs:text-darkgray-300 sm:text-center sm:text-darkgray-300 sm:pt-5 md:pl-3">Descarga nuestra App</p>
+              <ul class="mov-flex nav">
+                <li class="m-1">
+                  <a href="https://play.google.com/store/apps/details?id=grupoappmex.com.dish&hl=es_MX" target="_blank">
+                    <img src="assets/images/img/googleplay.png" alt="google play" class="app-footer-desk">
+  
+                    <img src="assets/images/img/googleplay.png" alt="google play" class="app-footer-mov">
+                  </a>
+                </li>
+                <li class="m-1">
+                  <a href="https://apps.apple.com/mx/app/dish-mexico/id1480610778" target="_blank">
+                  <img src="assets/images/img/ios.png" alt="app store" class="app-footer-desk">
+                  <img src="assets/images/img/ios.png" alt="app store" class="app-footer-mov">
+                </a>
+              </li>
+                <li class="m-1">
+                  <a href="https://appgallery.huawei.com/#/app/C102065091" target="_blank">
+                  <img src="assets/images/img/huawei.png" alt="appgallery" class="app-footer-desk">
+                  <img src="assets/images/img/huawei.png" alt="appgallery" class="app-footer-mov">
+                </a>
+              </li>
+              </ul>
+              <ul class="list-font nav d-flex flex-column">
+                <li><a href="https://secciones.dish.com.mx/avisos-de-privacidad.html" target="_blank">Aviso de privacidad</a></li>
+                <li><a href="https://secciones.dish.com.mx/legal.html" target="_blank">Aviso Legal </a></li>
+                <li><a href="https://secciones.dish.com.mx/terminos-de-uso.html" target="_blank">Términos de uso </a></li>
+                <li><a rel="noreferrer" href="https://tvlistings.gracenote.com/grid-affiliates.html?aid=dishmex">Guía de programación</a></li>
+              </ul>
+            </div>
+            <div class="conditions mx-5 mt-5">
+              <ul class="list-font nav d-flex flex-column">
+                <li>
+                  <a href="https://oninternet.com.mx/" rel="noreferrer" target="_blank" aria-label="Términos y condiciones ON Internet">Términos y condiciones ON Internet
+                  </a>
+                </li>
+                <li><a href="https://fundaciondish.org/" rel="noreferrer" target="_blank" aria-label="Fundación Dish">Fundación Dish</a></li>
+                <li><a href="https://www.dish.com.mx/dish_empresas/index.html" rel="noreferrer" target="_blank" aria-label="Dish Empresas">Dish Empresas</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex-bg py-4 text-gray d-flex flex-row justify-content-between">
+          <p class="txt-family">Conoce a los miembros de nuestra familia</p>
+          <ul class="nav">
+            <li class="mx-1">
+              <a href="https://oninternet.com.mx/"><img src="assets/images/img/ontinternet.png" alt="ON Internet">
+              </a>
+            </li>
+            <li class="mx-1">
+              <a href="https://www.fpop.com.mx/"><img src="assets/images/img/fpop.png" alt="FreedomPop">
+              </a>
+            </li>
+          </ul>
+          <ul class="social nav">
+            <li class=" mx-1">
+              <a href="https://www.facebook.com/DishMX"><img src="assets/images/img/facebook.png" alt="Facebook">
+              </a>
+            </li>
+            <li class="mx-1">
+              <a href="https://www.youtube.com/user/MexicoDish"><img src="assets/images/img/youtube.png" alt="YouTube">
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </footer>
+  
+      <div class="bg-gray py-4 px-5">
+        <p class="text-gray">Derechos Reservados  Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V., Dish México, S. de R. L. de C.V. 2011. Prohibida su Reproducción Total o Parcial. Todo el material, incluyendo imágenes, texto, ilustraciones, diseños, íconos, fotografías, programas, videos y cualquier otro material parte de este sitio constituyen derechos de autor, marcas, marcas tridimensionales y en general, propiedad intelectual de, controlada por o licenciada a Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V., Dish México, S. de R. L. de C.V. y sus empresas afiliadas, o bien corresponden a terceros que han licenciado o concedido el uso de sus materiales a Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V., Dish México, S. de R. L. de C.V. y sus empresas afiliadas, por lo que están protegidos por leyes mexicanas e internacionales. El acceso a este sitio no otorga de ninguna forma, ni deberá entenderse como si otorgara licencia, cesión o autorización de los derechos de propiedad intelectual de Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V Dish México, S. de R. L. de C.V., sus empresas afiliadas, ni de los terceros propietarios de marcas, logos, nombres comerciales y cualquier otro contenido de este sitio. Precios y señales sujetos a cambio, previa autorización de la autoridad competente. Dish es una marca registrada y es utilizada conforme a la licencia de DISH Network Corporation o sus afiliadas.</p>
+      </div>
+        </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
