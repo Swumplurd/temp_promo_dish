@@ -19,11 +19,23 @@
 
 <style>
 /* ====== MODAL BASE ====== */
+
+.modal-content {
+   border-radius: 20px;
+}
+
 .modal-content.modal {
   border-radius: 24px;
   padding: 40px 40px 80px;
   border: none;
 }
+
+
+.row.ofertamodal {
+    height: auto;
+    padding-bottom: 100px;
+}
+
 
 
 /* Botón X */
@@ -69,6 +81,7 @@
   padding: 0;
   overflow-y: auto;
   max-height: 80vh;
+  padding: 3%;
 }
 
 
@@ -87,7 +100,6 @@
 
 /* Badgejita roja */
 .channels-group h3 {
-  position: absolute;
   top: -22px;
   left: 24px;
   background: #e31c23;
@@ -98,17 +110,21 @@
   font-weight: 600;
   letter-spacing: .5px;
   box-shadow: 0 8px 20px rgba(227,28,35,.35);
+  float: left;
   
 }
 
 
 /* Texto canales */
 .channels-group p {
-  font-size: 24px;
-  font-weight: 800;
-  margin-top: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 0px;
   margin-bottom: 24px;
   color: #111;
+ 
+ 
 }
 
 /* ====== LOGOS ====== */
@@ -144,6 +160,7 @@
   width: 100%;
   background: white;
   border-radius: 0 0 24px 24px;
+
 }
 
 .btn-contratar {
@@ -408,93 +425,96 @@
 
       <!-- HEADER -->
       <div>
-        <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Cerrar"> 
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDA2IDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi40IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDA0OTdBNEU4NjkxMUVCQTEzRkI1QzJFMjdFRkU3MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDA0OTdBNUU4NjkxMUVCQTEzRkI1QzJFMjdFRkU3MCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MDQ5N0EyRTg2OTExRUJBMTNGQjVDMkUyN0VGRTcwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MDQ5N0EzRTg2OTExRUJBMTNGQjVDMkUyN0VGRTcwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hAHsNgAAA1dJREFUeNrMml1IFUEYho9LCIoaZpREF0XdlP2B0SE8UocuUkjMgspuoigIL4woC8GgiJAuskiIgsRDN4EgCpWRVBCW9ENaEFnQL50UIUxNlKCY3qlZkHV/Zueb3e2Fh3Nx9vtm3t2dmW93NsYYi9mQD8rEbyxiLoEfgrcgbnecXWA9GGP/NAoORGjiMpup32Cjl5HjzF4nIzBxkbmrwslIjUfgmRBNnGZy2mU1Ui0Z2ByCiTrmT0nTSIXPwGsBmqhl/jVgGhlVCE4FYGI3U9OIaURVtzSaqCb0o9M0Mk5IckeDiXJGU6FppIqYqBfkKpooJbZdap21KokJ34DZPk0UE9vc4LSObCUm/gDmSpooAlOEtrZ7rexJopmvYLGHCf7/JKGNnbK1Vgn4SWjoO1jiYGIeGCbk3u90gpzO2hrRIVXxonOdJSefED4Rch5xu9Jut8AiMES81RIiVyZ4TcjT4DXuvAblQvCFaGYH6CLEN8pMIBl/3bgrHzwEy2Ph6wI4LHOgjBGuLPAErAzRRCvYJ3uwIXncFFgLHoRkot2PCT9XZLpug7IATXSDzX6DDIWGykFHQCYeqZhQNcK1DaQ0m3gOEqrBBqHhvWJA6lAfKKEkUBkjVvHp8RzPpRg/AXKpnTA0nM0BYjyf2lvIvYjwEdWqbpCt2hfKrVUJOjUP+I9irAyFNUY2gbsBTcGDIA7SQY+RRIAmuBaAflAU5BVZDV6EVKZMgiR4qvuKLBVVcFjKFoVqQqeRQrHy5ih2apxgqAds0WGEP488A3mKHeGdWAbGCGZugCrKOlIA3hPWhkOWtyeDxLVmj8qjriFevKnqlE3O+eAd0UyNXyO9hMaaXPLmEV9EcB2TNXKP0MhViZJiFvFEzdhBs2vkJiF5m88aqYdopsnJyHVC0g7Fgq+LaKbZaqSVWLlSqug2opk6M9EJQpLHmnatWgh9SPMEOYQEfZr3Ec8r9mPYIDxmfgbrNddX/LG5USEuZZ6JfoVNnYIAt6nrffSlHWRMLx9kt6lHxD5H0B8OHJXoy3276ZebSXsETrhs4gTBQdlJxho4x6VI/AVWRfBxjd2HBK9kShS+s/TSJjge4edOK8SnI/xWOguyZN+iZIIG8dz8DVwRbwP/W/0RYABzDx3P9z/MBQAAAABJRU5ErkJggg==" alt="close" class="iconcerrar" >
-
+        <button
+          type="button"
+          class="btn-close modal-close"
+          data-bs-dismiss="modal"
+          aria-label="Cerrar"
+        >
+          <img
+            src="assets/images/img/close_modal.png"
+            alt="close"
+            class="iconcerrar"
+          >
         </button>
-
-   
-
       </div>
 
-    
-    <!-- BODY -->
-<div class="modal-body">
+      <!-- BODY -->
+      <div class="modal-body">
 
-  <!-- TÍTULO -->
-  <div class="row mb-4">
-    <div class="col-12">
-      <p class="plan-name m-0">82 CANALES</p>
+        <!-- TÍTULO -->
+        <div class="row mb-4 titlemodal">
+          <div class="col-12">
+            <p class="plan-name m-0">82 CANALES</p>
+          </div>
+        </div>
+
+        <!-- GRUPOS DE CANALES -->
+        <div class="row ofertamodal">
+
+          <!-- Grupo 1 -->
+          <div class="col-12 col-md-6 mb-4">
+            <section class="channels-group">
+              <h3>TV abierta</h3>
+              <p>&nbsp;7 Canales</p>
+              <ul class="channels-list">
+                <li><img src="logos/once-ninos.png" alt=""></li>
+                <li><img src="logos/tv-unam.png" alt=""></li>
+                <li><img src="logos/canal-22.png" alt=""></li>
+                <li><img src="logos/adn.png" alt=""></li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Grupo 2 -->
+          <div class="col-12 col-md-6 mb-4">
+            <section class="channels-group">
+              <h3>TV de Paga</h3>
+              <p>&nbsp;25 Canales</p>
+              <ul class="channels-list">
+                <li><img src="logos/fox.png" alt=""></li>
+                <li><img src="logos/espn.png" alt=""></li>
+                <li><img src="logos/hbo.png" alt=""></li>
+                <li><img src="logos/tnt.png" alt=""></li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Grupo 3 -->
+          <div class="col-12 col-md-6 mb-4">
+            <section class="channels-group">
+              <h3>Infantiles</h3>
+              <p>&nbsp;10 Canales</p>
+              <ul class="channels-list">
+                <li><img src="logos/cartoon.png" alt=""></li>
+                <li><img src="logos/disney.png" alt=""></li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Grupo 4 -->
+          <div class="col-12 col-md-6 mb-4">
+            <section class="channels-group">
+              <h3>Noticias</h3>
+              <p>&nbsp;8 Canales</p>
+              <ul class="channels-list">
+                <li><img src="logos/cnn.png" alt=""></li>
+                <li><img src="logos/bbc.png" alt=""></li>
+              </ul>
+            </section>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BOTÓN CONTRATAR -->
+      <button class="btn btn-danger btn-contratar">
+        Contratar
+      </button>
+
     </div>
-  </div>
-
-  <!-- GRUPOS DE CANALES -->
-  <div class="row">
-
-    <!-- Grupo 1 -->
-    <div class="col-12 col-md-6 mb-4">
-      <section class="channels-group">
-        <h3>TV abierta</h3>
-        <p>7 Canales</p>
-        <ul class="channels-list">
-          <li><img src="logos/once-ninos.png" alt=""></li>
-          <li><img src="logos/tv-unam.png" alt=""></li>
-          <li><img src="logos/canal-22.png" alt=""></li>
-          <li><img src="logos/adn.png" alt=""></li>
-        </ul>
-      </section>
-    </div>
-
-    <!-- Grupo 2 -->
-    <div class="col-12 col-md-6 mb-4">
-      <section class="channels-group">
-        <h3>TV de Paga</h3>
-        <p>25 Canales</p>
-        <ul class="channels-list">
-          <li><img src="logos/fox.png" alt=""></li>
-          <li><img src="logos/espn.png" alt=""></li>
-          <li><img src="logos/hbo.png" alt=""></li>
-          <li><img src="logos/tnt.png" alt=""></li>
-        </ul>
-      </section>
-    </div>
-
-    <!-- Grupo 3 -->
-    <div class="col-12 col-md-6 mb-4">
-      <section class="channels-group">
-        <h3>Infantiles</h3>
-        <p>10 Canales</p>
-        <ul class="channels-list">
-          <li><img src="logos/cartoon.png" alt=""></li>
-          <li><img src="logos/disney.png" alt=""></li>
-        </ul>
-      </section>
-    </div>
-
-    <!-- Grupo 4 -->
-    <div class="col-12 col-md-6 mb-4">
-      <section class="channels-group">
-        <h3>Noticias</h3>
-        <p>8 Canales</p>
-        <ul class="channels-list">
-          <li><img src="logos/cnn.png" alt=""></li>
-          <li><img src="logos/bbc.png" alt=""></li>
-        </ul>
-      </section>
-    </div>
-
   </div>
 </div>
-
-  <!-- BOTÓN CONTRATAR -->
-  <button class="btn btn-danger btn-contratar">
-    Contratar
-  </button>
-
-    </div>
-  </div>
-</div>
-
 
 
 
