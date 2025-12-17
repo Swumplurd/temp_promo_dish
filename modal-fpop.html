@@ -29,8 +29,8 @@
 /* Botón X */
 .modal-close.btn-close {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: -2%;
+  right: -2%;
   background-color: #e31c23;
   border-radius: 50%;
   width: 44px;
@@ -136,23 +136,15 @@
 }
 
 /* ====== FOOTER BOTÓN ====== */
-.modal-content::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100px;
-  width: 100%;
-  background: white;
-  border-radius: 0 0 24px 24px;
+
+.modal-footer {
+  border: none;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-contratar {
   font-family: 'Poppins', sans-serif;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   background: #e31c23;
   border-radius: 40px;
   padding: 16px 48px;
@@ -175,50 +167,77 @@
 }
 
 
+.modal-content {
+  border-radius: 1em;
+}
 
+.modal-include-fpop {
+  border: 0;
+  border-radius: 0.81em;
+  padding: 24px;
+  background: #F5F5F5;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
 
+.modal-include-fpop p {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-size: min(max(3vw, 1.1em), 1.3em);
+  font-weight: 500;
+}
 
+.modal-include-fpop span {
+  font-family: 'Poppins', sans-serif;
+  font-size: min(max(3vw, 1.1em), 1.3em);
+  font-weight: 500;
+  color: #E71B29;
+}
 
+.group-fpop {
+  width: 48% !important;
+}
 
+.g-img-whats {
+  width: 1.5em;
+}
 
+.g-img-mvshub {
+  width: 90px;
+}
 
+.modal-img-fpop {
+  max-width: 360px !important;
+}
 
+@media (max-width: 1199px) {
+  .group-fpop {
+    width: 100% !important;
+    padding: 0 1em;
+  }
+}
 
+@media (max-width: 375px) {
 
+  .modal-img-fpop {
+    padding: 0 1em;
+  }
 
+}
 
+@media (max-width: 320px) {
 
+  .modal-img-fpop {
+    max-width: 310px !important;
+    padding: 0 1em;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 </style>
 
 
-
-
-
-
-
-
-
   <body>
-
-
-
-  
-
-    
      <!-- Google Tag Manager (noscript) -->
      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKN539T"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -489,7 +508,7 @@
   
     </div>
   
-    <div class="col-12 col-xl-4 pt-2 text-center">
+    <div class="col-12 col-xl-4 pt-2 d-flex justify-content-center">
       <img class="img-fluid modal-img-fpop" src="assets/images/img/chicaFpop.png" alt="FreedomPop">
     </div>
   </div>
