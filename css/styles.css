@@ -1617,6 +1617,10 @@ button.btn.btn-nfl.mt-3 {
   width: 90px;
 }
 
+.img-fpop {
+  max-width: 360px;
+}
+
 @media (max-width: 1199px) {
   .group-fpop {
     width: 90% !important;
