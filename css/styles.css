@@ -1634,8 +1634,8 @@ button.btn.btn-nfl.mt-3 {
 /* Botón X */
 .modal-close.btn-close {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: -1.5%;
+  right: -1.5%;
   background-color: #e31c23;
   border-radius: 50%;
   width: 44px;
@@ -1667,7 +1667,7 @@ button.btn.btn-nfl.mt-3 {
   font-size: min(max(3vw, 1.5em), 2em);
   font-weight: 600;
   color: #e31c23;
- padding-left: 10px;
+  padding: 1em 0.5em;
 }
 
 /* ====== BODY ====== */
@@ -1705,7 +1705,7 @@ button.btn.btn-nfl.mt-3 {
   letter-spacing: .5px;
   box-shadow: 0 8px 20px rgba(227,28,35,.35);
   float: left;
-  
+  position: absolute;
 }
 
 
@@ -1717,7 +1717,7 @@ button.btn.btn-nfl.mt-3 {
   margin-top: 0px;
   margin-bottom: 24px;
   color: #111;
- 
+ padding-top: 0.5em;
  
 }
 
