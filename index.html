@@ -176,9 +176,13 @@
       </header>
       
     <div id="contain" class="contain">
-      <div class="container-banner col-12 d-flex">
-        <img src="./imagenes/herobanner.jpg" class="img-fluid border-25" alt="" srcset="">
-      </div>  
+      <div class="container-banner col-12 d-flex justify-content-center">
+        <img src="./imagenes/desktop/herobanner_dish.webp" class="img-fluid border-25 d-none d-sm-block" alt="" srcset="">
+        <img src="./imagenes/movil/bannerhero_movil.webp" class="img-fluid border-25 d-block d-sm-none" alt="" srcset="">
+      </div>
+      <div class="d-block d-sm-none mt-3">
+        <button class="btn-red-cards">Pídelo aquí</button>
+      </div>
       <div>
         <hr class="hr-red" style="display: block;">
         <h3 class="font-poppins fw-bold mt-3 mb-3">INCLUYE</h3>
@@ -188,7 +192,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="h-100">
-              <img src="./imagenes/lineacelular.jpg" class="card-img-top border-25" alt="...">
+              <img src="./imagenes/desktop/lineacelular_banner.webp" class="card-img-top border-25" alt="...">
               <div class="d-flex justify-content-center mt-3">
                 <button class="btn-red-cards text-center" alt="banner text link">Conoce más</button>
               </div>
@@ -196,7 +200,7 @@
           </div>
           <div class="col">
             <div class="h-100">
-              <img src="./imagenes/canalesdetv.jpg" class="card-img-top border-25" alt="...">
+              <img src="./imagenes/desktop/canales_tv.webp" class="card-img-top border-25" alt="...">
               <div class="d-flex justify-content-center mt-3">
                 <button class="btn-red-cards text-center" alt="banner text link">Conoce más</button>
               </div>
@@ -204,7 +208,7 @@
           </div>
           <div class="col">
             <div class="h-100">
-              <img src="./imagenes/canales_streaming.jpg" class="card-img-top border-25" alt="...">
+              <img src="./imagenes/desktop/streaming.webp" class="card-img-top border-25" alt="...">
               <div class="d-flex justify-content-center mt-3">
                 <button class="btn-red-cards text-center" alt="banner text link">Conoce más</button>
               </div>
@@ -214,68 +218,74 @@
       </div>
 
       <!-- CAROUSEL MOBILE -->
-<div class="d-block d-md-none">
-  <div id="cardsCarousel" class="carousel slide" data-bs-touch="true">
-    <div class="carousel-inner">
+      <div class="d-block d-md-none">
+        <div id="cardsCarousel" class="carousel slide" data-bs-touch="true">
+          <div class="carousel-inner">
 
-      <div class="carousel-item p-2 active">
-        <div class="text-center">
-          <img src="./imagenes/lineacelular.jpg" class="border-25" alt="">
-          <div class="mt-3">
-            <button class="btn-red-cards">Conoce más</button>
+            <div class="carousel-item p-2 active">
+              <div class="text-center">
+                <img src="./imagenes/desktop/lineacelular_banner.webp" class="border-25 img-fluid" alt="">
+                <div class="mt-3">
+                  <button class="btn-red-cards">Conoce más</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item p-2">
+              <div class="text-center">
+                <img src="./imagenes/desktop/canales_tv.webp" class="border-25 img-fluid" alt="">
+                <div class="mt-3">
+                  <button class="btn-red-cards">Conoce más</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item p-2">
+              <div class="text-center">
+                <img src="./imagenes/desktop/streaming.webp" class="border-25 img-fluid" alt="">
+                <div class="mt-3">
+                  <button class="btn-red-cards">Conoce más</button>
+                </div>
+              </div>
+            </div>
+
           </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#cardsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#cardsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
-
-      <div class="carousel-item p-2">
-        <div class="text-center">
-          <img src="./imagenes/canalesdetv.jpg" class="border-25" alt="">
-          <div class="mt-3">
-            <button class="btn-red-cards">Conoce más</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item p-2">
-        <div class="text-center">
-          <img src="./imagenes/canales_streaming.jpg" class="border-25" alt="">
-          <div class="mt-3">
-            <button class="btn-red-cards">Conoce más</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#cardsCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#cardsCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</div>
 
 
     </div>
 
     <div class="black-section mt-4">
       <h2 class="text-center fw-bold">CONTRÁTALO AHORA Y LLÉVATE POR 3 MESES:</h2>
-        <div class="row row-cols-1 row-cols-md-3 d-flex g-4">
+        <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center g-4">
           <div class="col-12 col-md-6">
-              <div class="card-body">
-                <img  class="img-fluid border-25" src="./imagenes/nflgamepass.png" alt="" srcset="">
+              <div class="card-body p-3 d-flex justify-content-center justify-content-sm-end">
+                <img  class="img-fluid border-25 d-none d-sm-block" src="./imagenes/desktop/nfl.webp" alt="" srcset="">
+                <img  class="img-fluid border-25 d-block d-sm-none" src="./imagenes/movil/BANNER_GAMEPASS_movil.webp" alt="" srcset="">
               </div>
           </div>
           <div class="col-12 col-md-6">
-              <div class="card-body">
-                <img  class="img-fluid border-25" src="./imagenes/6gigas.png" alt="" srcset="">
+              <div class="card-body p-3 d-flex justify-content-center">
+                <img  class="img-fluid border-25 d-none d-sm-block" src="./imagenes/desktop/6gigas.webp" alt="" srcset="">
+                <img  class="img-fluid border-25 d-block d-sm-none" src="./imagenes/movil/gigas_movil.webp" alt="" srcset="">
               </div>
           </div>
         </div>
-      <h2 class="text-center fw-bold">Pídelo al 55 55 123 123</h2>
+      <h2 class="text-center fw-bold d-none d-md-block">Pídelo al 55 55 123 123</h2>
+    </div>
+
+    <div class="d-block d-md-none mt-3">
+      <button class="btn-red-cards">Pídelo aquí</button>
     </div>
     
     
@@ -292,7 +302,7 @@
 
 <!-- Modal -->
 
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -415,7 +425,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
@@ -428,7 +438,7 @@
           Atención a Clientes
           <a href="tel:525556101010" target="_blank" class="font-medium">5556101010</a>
         </p>
-        <div class="flex-bg contain-footer col d-flex flex-row">
+        <div class="flex-bg contain-footer col d-flex flex-md-row">
           <div class="contact-bg col-md-5 col-sm-12 gradient-back py-4 px-3">
             <img src="https://www.dish.com.mx/img/logo-light.7026fbf8.svg" alt="Dish">
             <div class="contact-bg d-flex align-items-start justify-content-center">
