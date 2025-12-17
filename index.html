@@ -150,6 +150,38 @@
   max-height: 80px;
 }
 
+
+.channels-list-tv {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 16px;
+  padding-left: 0px;
+}
+
+
+.channels-list-tv li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #ebebeb;
+  border-radius: 50px;
+}
+
+
+.channels-list-tv img {
+  max-height: 40px;
+  object-fit: contain;
+}
+
+.channels-list-tv .hd{
+  max-height: 75px;
+  object-fit: contain;
+}
+
+
 /* ====== FOOTER BOTÓN ====== */
 .modal-content::after {
   content: "";
@@ -463,11 +495,15 @@
             <section class="channels-group">
               <h3>TV abierta</h3>
               <p>&nbsp;7 Canales</p>
-              <ul class="channels-list">
-                <li><img src="logos/once-ninos.png" alt=""></li>
-                <li><img src="logos/tv-unam.png" alt=""></li>
-                <li><img src="logos/canal-22.png" alt=""></li>
-                <li><img src="logos/adn.png" alt=""></li>
+              <ul class="channels-list-tv">
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/280.png" alt="ONCE NIÑOS"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/120.png" alt="TV UNAM"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/145.png" alt="CANAL DEL CONGRESO"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/306.png" alt="INGENIO TV"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/122.png" alt="CANAL 22"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/adn_noticias.png" alt="ADN NOTICIAS"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/tvmigrante.png" alt="TV MIGRANTE"></li>
+                
               </ul>
             </section>
           </div>
@@ -475,13 +511,19 @@
           <!-- Grupo 2 -->
           <div class="col-12 col-md-6 mb-4">
             <section class="channels-group">
-              <h3>TV de Paga</h3>
-              <p>&nbsp;25 Canales</p>
-              <ul class="channels-list">
-                <li><img src="logos/fox.png" alt=""></li>
-                <li><img src="logos/espn.png" alt=""></li>
-                <li><img src="logos/hbo.png" alt=""></li>
-                <li><img src="logos/tnt.png" alt=""></li>
+              <h3>TV abierta HD</h3>
+              <p>&nbsp;9 Canales</p>
+              <ul class="channels-list-tv">
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/1hd.png" alt="AZTECA UNO HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/2hd.png" alt="LAS ESTRELLAS HD"  class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/603.png" alt="IMAGEN TELEVISIÓN HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/5hd.png" alt="CANAL 5 HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/7hd.png" alt="AZTECA 7 HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/606.png" alt="CANAL 6 HD" ></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/611.png" alt="ONCE TV HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/614.png" alt="CANAL 14 HD" ></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/122.png" alt="CANAL 22 HD" ></li>
+
               </ul>
             </section>
           </div>
@@ -489,11 +531,20 @@
           <!-- Grupo 3 -->
           <div class="col-12 col-md-6 mb-4">
             <section class="channels-group">
-              <h3>Infantiles</h3>
-              <p>&nbsp;10 Canales</p>
-              <ul class="channels-list">
-                <li><img src="logos/cartoon.png" alt=""></li>
-                <li><img src="logos/disney.png" alt=""></li>
+              <h3>Entretenimiento</h3>
+              <p>&nbsp;11 Canales</p>
+              <ul class="channels-list-tv">
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/amas.png" alt="A MAS"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/712.png" alt="AMC HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/azteca_int.png" alt="AZTECA INTERNACIONAL"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/clip.png" alt="CLIP"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/752.png" alt="COMEDY CENTRAL HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/corazon.png" alt="CORAZON"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/741.png" alt="EL GOURMET HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/734.png" alt="INVESTIGATION DISCOVERY HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/704.png" alt="MVS TV HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/pasiones.png" alt="PASIONES"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/214.png" alt="TNT SERIES"></li>
               </ul>
             </section>
           </div>
@@ -501,11 +552,20 @@
           <!-- Grupo 4 -->
           <div class="col-12 col-md-6 mb-4">
             <section class="channels-group">
-              <h3>Noticias</h3>
-              <p>&nbsp;8 Canales</p>
-              <ul class="channels-list">
-                <li><img src="logos/cnn.png" alt=""></li>
-                <li><img src="logos/bbc.png" alt=""></li>
+              <h3>Series y Películas</h3>
+              <p>&nbsp;11 Canales</p>
+              <ul class="channels-list-tv">
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/730.png" alt="A&E HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/722.png" alt="AXN HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/cinema.png" alt="CINEMA"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/224.png" alt="FX"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/208.png" alt="SONY CHANNEL"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/726.png" alt="SPACE HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/702.png" alt="STAR CHANNEL HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/tnt_novelas.png" alt="TNT NOVELAS"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/706.png" alt="UNIVERSAL TV HD" class="hd"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/usa.png" alt="USA"></li>
+                <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/710.png" alt="WARNER CHANNEL HD" class="hd"></li>
               </ul>
             </section>
           </div>
@@ -513,11 +573,18 @@
               <!-- Grupo 5 -->
               <div class="col-12 col-md-6 mb-4">
                 <section class="channels-group">
-                  <h3>Infantiles</h3>
-                  <p>&nbsp;10 Canales</p>
-                  <ul class="channels-list">
-                    <li><img src="logos/cartoon.png" alt=""></li>
-                    <li><img src="logos/disney.png" alt=""></li>
+                  <h3>Conocimiento</h3>
+                  <p>&nbsp;6 Canales</p>
+                  <ul class="channels-list-tv">
+               
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/322.png" alt="ARTS"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/daystar.png" alt="DAYSTAR"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/808.png" alt="DISCOVERY CHANNEL HD" class="hd"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/320.png" alt="HISTORY 2"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/818.png" alt="HISTORY CHANNEL HD" class="hd"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/812.png" alt="NATIONAL GEOGRAPHIC HD" class="hd"></li>
+                   
+                      
                   </ul>
                 </section>
               </div>
@@ -525,15 +592,114 @@
               <!-- Grupo 6 -->
               <div class="col-12 col-md-6 mb-4">
                 <section class="channels-group">
-                  <h3>Noticias</h3>
-                  <p>&nbsp;8 Canales</p>
-                  <ul class="channels-list">
-                    <li><img src="logos/cnn.png" alt=""></li>
-                    <li><img src="logos/bbc.png" alt=""></li>
+                  <h3>Deportes</h3>
+                  <p>&nbsp;7 Canales</p>
+                  <ul class="channels-list-tv">
+                    <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/azteca_deportes.png" alt="AZTECA DEPORTES"></li>
+                    <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/836.png" alt="CLARO SPORTS HD" class="hd"></li>
+                    <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/842.png" alt="ESPN 2 HD" class="hd"></li>
+                    <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/844.png" alt="ESPN 3 HD" class="hd"></li>
+                    <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/840.png" alt="ESPN EXTRA HD" class="hd"></li>
+                    <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/espn.png" alt="ESPN HD" class="hd"></li>
+                    <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/337.png" alt="HI SPORTS"></li>
                   </ul>
                 </section>
               </div>
 
+                <!-- Grupo 6 -->
+                <div class="col-12 col-md-6 mb-4">
+                  <section class="channels-group">
+                    <h3>Infantil</h3>
+                    <p>&nbsp;8 Canales</p>
+                    <ul class="channels-list-tv">
+                     
+                        <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/294.png" alt="BABY FIRST"></li>
+                        <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/290.png" alt="CARTOON NETWORK"></li>
+                        <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/792.png" alt="DISCOVERY KIDS HD" class="hd"></li>
+                        <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/782.png" alt="DISNEY CHANNEL HD" class="hd"></li>  class="hd"
+                        <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/283.png" alt="DISNEY JUNIOR"></li>
+                        <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/dreamworks.png" alt="DREAMWORKS"></li>
+                        <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/286.png" alt="NICKELODEON"></li>
+                        <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/285.png" alt="NICKMUSIC"></li>
+                     
+                      
+                    </ul>
+                  </section>
+                </div>
+
+                    <!-- Grupo 6 -->
+                    <div class="col-12 col-md-6 mb-4">
+                      <section class="channels-group">
+                        <h3>Películas</h3>
+                        <p>&nbsp;9 Canales</p>
+                        <ul class="channels-list-tv">
+                         
+                            <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/878.png" alt="CINECANAL HD" class="hd"></li>
+                            <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/382.png" alt="CINELATINO"></li>
+                            <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/874.png" alt="CINEMAX HD" class="hd"></li>
+                            <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/384.png" alt="FILM & ARTS"></li>
+                            <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/872.png" alt="MC HD" class="hd"></li>
+                            <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/876.png" alt="MULTIPREMIER HD" class="hd"></li>
+                            <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/888.png" alt="PARAMOUNT NETWORK HD" class="hd"></li>
+                            <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/386.png" alt="STUDIO UNIVERSAL"></li>
+                            <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/870.png" alt="TNT HD" class="hd"></li>
+                     
+                          
+                        </ul>
+                      </section>
+                    </div>
+
+
+                  <!-- Grupo 6 -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <section class="channels-group">
+                      <h3>Información</h3>
+                      <p>&nbsp;5 Canales</p>
+                      <ul class="channels-list-tv">
+                       
+                          <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/350.png" alt="CNN ESPANOL"></li>
+                          <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/360.png" alt="JUSTICIA TV"></li>
+                          <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/358.png" alt="MEGANOTICIAS MX"></li>
+                          <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/356.png" alt="MILENIO TELEVISIÓN"></li>
+                          <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/telemundo_int.png" alt="TELEMUNDO INTERNACIONAL"></li>
+                       
+                        
+                      </ul>
+                    </section>
+                  </div>
+              <!-- Grupo 6 -->
+              <div class="col-12 col-md-6 mb-4">
+                <section class="channels-group">
+                  <h3>Estilo de vida</h3>
+                  <p>&nbsp;5 Canales</p>
+                  <ul class="channels-list-tv">
+                    
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/736.png" alt="DISCOVERY HOME&HEALTH HD" class="hd"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/740.png" alt="DISCOVERY TRAVEL & LIVING HD" class="hd"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/748.png" alt="E! ENTERTAINMENT HD" class="hd"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/246.png" alt="HOLA TV"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/242.png" alt="LIFETIME"></li>
+          
+                    
+                  </ul>
+                </section>
+              </div>
+          
+                  <!-- Grupo 6 -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <section class="channels-group">
+                      <h3>Música</h3>
+                      <p>&nbsp;5 Canales</p>
+                      <ul class="channels-list-tv">
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/272.png" alt="EXA TV"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/266.png" alt="LA MEJOR TV"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/hd/760.png" alt="MTV HD" class="hd"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/teleritmo.png" alt="TELERITMO"></li>
+                      <li><img src="https://d58ohtx80p2sd.cloudfront.net/dish/grilla_gracenote/logos_canales/videorolla.png" alt="VIDEOROLA"></li>
+
+                      </ul>
+                    </section>
+                  </div>
               
         </div>
       </div>
